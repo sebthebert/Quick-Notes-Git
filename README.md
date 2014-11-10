@@ -23,28 +23,67 @@ Git workflow:
 
 ## Settings
 
-To setup git configuration for every user on the system (configuration will be stored in `/etc/gitconfig`):
+Setup git configuration for every user on the system (configuration will be stored in `/etc/gitconfig`):
 ```shell
 git config --system
 ```
 
-To setup git configuration for your user (configuration will be stored in `~/.gitconfig` or `~/.config/git/config`):
+Setup git configuration for your user (configuration will be stored in `~/.gitconfig` or `~/.config/git/config`):
 ```shell
 git config --global
 ```
 
-To setup git configuration for one repository only (configuration will be stored in `.git/config` of the repository):
+Setup git configuration for one repository only (configuration will be stored in `.git/config` of the repository):
 ```shell
 git config
 ```
 
-To setup user name & email:
+Setup user name & email:
 ```shell
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+List all settings configured:
+```shell
+git config --list 
+```
 
+Get the value of a configuration key:
+```shell
+git config <key> 
+```
+
+## Basics
+
+Create a Git repository (a `.git/` directory is created):
+```shell
+git init 
+```
+
+Clone an existing repository:
+```shell
+git clone https://github.com/sebthebert/Quick-Notes-Git
+git clone https://github.com/sebthebert/Quick-Notes-Git another_directory
+```
+
+Check status of your files:
+```shell
+git status 
+```
+
+For a shorter status:
+```shell
+git status -s
+git status --short
+```
+
+To stage a file:
+```shell
+git add <filename> 
+```
+
+To ignore files that you don't want to track with git, list them in a `.gitignore` file
 ## Sources
 
 **Pro Git** book
