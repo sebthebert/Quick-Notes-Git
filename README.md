@@ -113,6 +113,11 @@ Diff between stage area and repository
 git diff --staged
 ```
 
+Diff at 'word level'
+```shell
+git diff --word-diff=plain dist.ini
+```
+
 https://stackoverflow.com/a/3686507/24820
 
 ### git log
