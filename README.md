@@ -110,6 +110,21 @@ git checkout -- <filename>
 git checkout -- <directory>
 ```
 
+Get an older version (with sha1-hash) of one file in stage area, diff it to check it and the re-commit
+```shell
+git checkout <sha1-hash> -- <filename>
+git diff --stagged
+git commit ...
+```
+See also [git revert](#git-revert)
+
+### git commit
+
+Modify the last commit (don't create another one in commit history) (but hash and date change)
+```shell
+git commit --amend -m "<message>"
+```
+
 ### git diff
 
 Diff between working directory and stage area
@@ -141,6 +156,13 @@ git log --until=2018-01-31
 git log --author="author name"
 
 git log --grep="something to search"
+```
+
+### git revert
+
+Undo a complete commit:
+```shell
+git revert <sha1-hash>
 ```
 
 To ignore files that you don't want to track with git, list them in a `.gitignore` file
