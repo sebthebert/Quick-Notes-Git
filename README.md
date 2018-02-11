@@ -158,6 +158,26 @@ git log --author="author name"
 git log --grep="something to search"
 ```
 
+### git reset
+
+**USE WITH CAUTION !**
+Move HEAD pointer...
+
+(doesn't change staging area and working diretory)
+```shell
+git reset --soft <sha1-hash>
+```
+
+(changes staging area but not the working directory)
+```shell
+git reset --mixed <sha1-hash>
+```
+
+(changes staging area and the working directory)
+```shell
+git reset --hard <sha1-hash>
+```
+
 ### git revert
 
 Undo a complete commit:
