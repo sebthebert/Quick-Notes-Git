@@ -18,8 +18,8 @@ Git has 3 main states:
 
 Git workflow:
   1. Files are modified in working directory
-  2. Files are staged
-  3. Files in staged area are commited
+  2. Files are staged (with `git add`)
+  3. Files in staged area are commited (with `git commit`)
 
 ## Settings
 
