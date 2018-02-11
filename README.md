@@ -113,6 +113,8 @@ Diff between stage area and repository
 git diff --staged
 ```
 
+https://stackoverflow.com/a/3686507/24820
+
 ### git log
 
 ```shell
