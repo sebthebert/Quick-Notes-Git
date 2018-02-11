@@ -54,6 +54,23 @@ Get the value of a configuration key:
 git config <key> 
 ```
 
+### Bash Completion
+
+Download from Github:
+```shell
+cd ~
+curl -OL https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+mv ~/git-completion.bash ~/.git-completion.bash
+```
+
+Edit `.bash_profile`:
+```shell
+if [ -f ~/.git-completion.bash ]; 
+then
+    source ~/.git-completion.bash
+fi
+```
+
 ## Basics
 
 Create a Git repository (a `.git/` directory is created):
