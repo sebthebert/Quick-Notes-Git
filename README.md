@@ -118,6 +118,18 @@ git commit ...
 ```
 See also [git revert](#git-revert)
 
+### git clean
+
+Test remove untracked files:
+```shell
+git clean -n
+```
+
+Remove untracked files:
+```
+git clean -f
+```
+
 ### git commit
 
 Modify the last commit (don't create another one in commit history) (but hash and date change)
