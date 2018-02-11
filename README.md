@@ -100,7 +100,22 @@ To stage a file:
 git add <filename> 
 ```
 
+### git log
+
+```shell
+git log -n 10
+
+git log --since=2018-02-01
+
+git log --until=2018-01-31
+
+git log --author="author name"
+
+git log --grep="something to search"
+```
+
 To ignore files that you don't want to track with git, list them in a `.gitignore` file
+
 ## Sources
 
 **Pro Git** book
