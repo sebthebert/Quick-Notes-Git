@@ -101,6 +101,15 @@ To stage a file:
 git add <filename> 
 ```
 
+### git checkout
+
+"Undo" changes on working area file or directory (by checkout-ing the repository one) 
+```shell
+git checkout -- <filename>
+
+git checkout -- <directory>
+```
+
 ### git diff
 
 Diff between working directory and stage area
