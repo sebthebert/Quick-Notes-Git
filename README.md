@@ -71,6 +71,7 @@ then
 fi
 ```
 
+
 ## Basics
 
 Create a Git repository (a `.git/` directory is created):
@@ -98,6 +99,18 @@ git status --short
 To stage a file:
 ```shell
 git add <filename> 
+```
+
+### git diff
+
+Diff between working directory and stage area
+```shell
+git diff
+```
+
+Diff between stage area and repository
+```shell
+git diff --staged
 ```
 
 ### git log
