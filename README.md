@@ -54,6 +54,11 @@ Get the value of a configuration key:
 git config <key> 
 ```
 
+Ignore files for all your projets:
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
+
 ### Bash Completion
 
 Download from Github:
