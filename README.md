@@ -161,18 +161,47 @@ git diff --word-diff=plain dist.ini
 
 https://stackoverflow.com/a/3686507/24820
 
+
+```shell
+git diff <sha1-hash> <filename>
+
+git diff <sha1-hash>..<sha1-hash>
+
+git diff --stat --summary <sha1-hash>..<sha1-hash>
+
+git diff -b -w <sha1-hash>..<sha1-hash>
+```
+
 ### git log
 
 ```shell
+git log --oneline
+
 git log -n 10
 
 git log --since=2018-02-01
+git log --since="2 weeks ago"
 
 git log --until=2018-01-31
+git log --until="3 days ago"
 
 git log --author="author name"
 
 git log --grep="something to search"
+
+git log <sha1>..<sha1>
+
+git log -p
+
+git log --stat --summary
+```
+
+### git ls-tree
+
+```shell
+git ls-tree HEAD
+
+git ls-tree HEAD~1 <directory>
 ```
 
 ### git reset
@@ -200,6 +229,14 @@ git reset --hard <sha1-hash>
 Undo a complete commit:
 ```shell
 git revert <sha1-hash>
+```
+
+### git show
+
+```shell
+git show <sha1-hash>
+
+git show <tree-ish>
 ```
 
 To ignore files that you don't want to track with git, list them in a `.gitignore` file
